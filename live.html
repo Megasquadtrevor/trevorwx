@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrevorWX | Live Coverage</title>
+  <link rel="stylesheet" href="live.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html"><span>TREVOR</span><b>WX</b></a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="radar.html">Radar</a>
+      <a href="index.html#severe">Severe Weather</a>
+      <a href="index.html#forecast">Forecast</a>
+      <a class="active" href="live.html">Live Coverage</a>
+    </nav>
+
+    <a class="home-button" href="index.html">← Back to HQ</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="grid"></div>
+      <div class="sweep"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> TREVORWX LIVE COVERAGE</p>
+        <h1>Weather happens.<br><span>We go live.</span></h1>
+        <p>Live severe-weather coverage, forecast updates, radar tracking, and chaser-camera monitoring from TrevorWX.</p>
+
+        <div class="hero-buttons">
+          <a class="button primary" href="#" id="watchButton">Watch on YouTube</a>
+          <a class="button secondary" href="#" id="discordButton">Join Weather Discord</a>
+        </div>
+      </div>
+
+      <div class="live-status-card">
+        <span class="panel-label">BROADCAST STATUS</span>
+        <strong id="liveStatus">OFFLINE</strong>
+        <p id="liveMessage">No live coverage is active right now. Check back for forecasts and severe-weather streams.</p>
+        <div class="status-bar"><span id="statusBar"></span></div>
+        <small id="statusTime">TrevorWX HQ standing by</small>
+      </div>
+    </section>
+
+    <section class="coverage-grid">
+      <section class="stream-panel">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">LIVE STREAM</p>
+            <h2>TrevorWX Broadcast</h2>
+          </div>
+          <span class="stream-badge" id="streamBadge">OFFLINE</span>
+        </div>
+
+        <div class="video-placeholder" id="videoArea">
+          <div class="play-icon">▶</div>
+          <strong id="videoTitle">No live stream right now</strong>
+          <span id="videoText">When TrevorWX goes live, the broadcast will appear here.</span>
+        </div>
+
+        <div class="stream-footer">
+          <span>Forecasts • Severe Weather • Live Coverage</span>
+          <a href="#" id="youtubeTextLink">Open YouTube ↗</a>
+        </div>
+      </section>
+
+      <aside class="watching-panel">
+        <p class="eyebrow">WHAT WE’RE WATCHING</p>
+        <h2 id="watchingTitle">Monitoring Conditions</h2>
+        <p id="watchingText">TrevorWX is monitoring weather conditions and will post updates when there is something to watch.</p>
+        <div class="watching-line"></div>
+        <small id="watchingUpdated">Updated by TrevorWX HQ</small>
+      </aside>
+    </section>
+
+    <section class="tools-section">
+      <div>
+        <p class="eyebrow">FIELD TOOLS</p>
+        <h2>Chaser Cam Network</h2>
+        <p>Open the TrevorWX Chaser Cam dashboard to check available live storm and community camera feeds.</p>
+      </div>
+      <a class="button primary" href="#" id="chaserButton">Open Chaser Cams</a>
+    </section>
+
+    <section class="info-grid">
+      <article>
+        <span class="info-icon">◉</span>
+        <h3>Live Radar</h3>
+        <p>Track storms and warnings with the TrevorWX radar workspace.</p>
+        <a href="radar.html">Open Radar →</a>
+      </article>
+
+      <article>
+        <span class="info-icon">⚠</span>
+        <h3>Alert Updates</h3>
+        <p>Join the Discord weather section for TrevorWX alert posts and coverage notifications.</p>
+        <a href="#" id="discordTextLink">Join Discord →</a>
+      </article>
+
+      <article>
+        <span class="info-icon">☀</span>
+        <h3>Latest Forecast</h3>
+        <p>Check the latest Coon Rapids and Twin Cities forecast update.</p>
+        <a href="#" id="forecastButton">Watch Forecast →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo"><span>TREVOR</span><b>WX</b></div>
+    <p>Weather information is for awareness. Always follow official alerts from the National Weather Service and local emergency management.</p>
+    <span>© <span id="year"></span> TrevorWX</span>
+  </footer>
+
+  <script src="live.js"></script>
+</body>
+</html>

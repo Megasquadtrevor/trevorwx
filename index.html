@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrevorWX | Weather Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">
+      <span>TREVOR</span><b>WX</b>
+    </a>
+
+    <nav>
+<a href="radar.html">Radar</a>
+<a href="severe.html">Severe Weather</a>
+<a href="forecast.html">Forecast</a>
+<a href="live.html">Live Coverage</a>
+    </nav>
+
+    <a class="discord-link" href="#" id="discordButton">Join Discord</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="radar-rings"></div>
+      <div class="radar-sweep"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> TREVORWX HQ IS ONLINE</p>
+        <h1>Your Weather.<br><span>Right Now.</span></h1>
+        <p class="hero-text">
+          Forecasts, live radar, severe weather coverage, and real-time weather updates from TrevorWX.
+        </p>
+
+        <div class="hero-buttons">
+<a class="button primary" href="live.html">Watch Live Coverage</a>
+<a class="button secondary" href="radar.html">Open Live Radar</a>
+        </div>
+      </div>
+
+      <div class="alert-card">
+        <div class="alert-top">
+          <span>ALERT STATUS</span>
+          <strong id="alertStatus">MONITORING</strong>
+        </div>
+        <h2 id="alertHeadline">No active severe weather alerts</h2>
+        <p id="alertLocation">Monitoring nationwide conditions</p>
+        <div class="alert-line"></div>
+        <small>Updated from TrevorWX Alert Monitor</small>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <a href="#live">
+        <span class="icon">▶</span>
+        <div><strong>LIVE COVERAGE</strong><small>Streams and chaser cameras</small></div>
+      </a>
+      <a href="#radar">
+        <span class="icon">◉</span>
+        <div><strong>LIVE RADAR</strong><small>Track storms in real time</small></div>
+      </a>
+      <a href="#severe">
+        <span class="icon">⚠</span>
+        <div><strong>SEVERE WEATHER</strong><small>Warnings and outlooks</small></div>
+      </a>
+      <a href="#forecast">
+        <span class="icon">☀</span>
+        <div><strong>7-DAY FORECAST</strong><small>Coon Rapids and Twin Cities</small></div>
+      </a>
+    </section>
+
+    <section class="section" id="radar">
+      <div class="section-heading">
+        <p class="eyebrow">TREVORWX TOOLS</p>
+        <h2>Live Weather Radar</h2>
+        <p>Open the same radar workspace you use for tracking storms and recording weather videos.</p>
+      </div>
+
+      <div class="radar-panel">
+        <div>
+          <span class="panel-label">INTERACTIVE WEATHER RADAR</span>
+          <h3>Track storms as they develop.</h3>
+          <p>Use the TrevorWX radar workspace for radar, warnings, storm reports, and situational awareness.</p>
+          <a class="button primary" href="#" id="radarButton">Open Fullscreen Radar</a>
+        </div>
+        <div class="radar-art">
+          <div class="mini-ring"></div>
+          <div class="mini-sweep"></div>
+          <span>LIVE<br>RADAR</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="severe">
+      <div>
+        <p class="eyebrow">SEVERE WEATHER CENTER</p>
+        <h2>Stay ahead of the storm.</h2>
+        <p>When severe weather is possible, this is where TrevorWX coverage, alerts, radar links, and important updates will be posted.</p>
+        <a class="text-link" href="https://www.weather.gov/" target="_blank" rel="noopener">Official National Weather Service alerts →</a>
+      </div>
+
+      <div class="status-panel">
+        <span class="panel-label">CURRENT STATUS</span>
+        <strong id="statusPanelType">MONITORING NATIONWIDE</strong>
+        <p id="statusPanelText">No active severe weather alert is currently leading the board.</p>
+        <div class="status-tags">
+          <span>RADAR</span>
+          <span>WARNINGS</span>
+          <span>LIVE UPDATES</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="forecast">
+      <div class="section-heading">
+        <p class="eyebrow">LOCAL FORECAST</p>
+        <h2>Coon Rapids & Twin Cities</h2>
+        <p>Daily forecasts, weather videos, and the latest 7-day outlook from TrevorWX.</p>
+      </div>
+
+      <div class="forecast-card">
+        <div>
+          <span class="panel-label">LATEST FORECAST</span>
+          <h3>7-Day Forecast</h3>
+          <p>Watch the latest TrevorWX forecast video or check the forecast board before heading out.</p>
+        </div>
+        <a class="button secondary" href="#" id="forecastButton">Watch Latest Forecast</a>
+      </div>
+    </section>
+
+    <section class="section live-section" id="live">
+      <p class="eyebrow">TREVORWX LIVE</p>
+      <h2>Live coverage when weather matters.</h2>
+      <p>Weather streams, severe-weather coverage, forecasts, and chaser camera updates.</p>
+      <div class="hero-buttons">
+        <a class="button primary" href="#" id="youtubeButton">Watch on YouTube</a>
+        <a class="button secondary" href="#" id="chaserButton">Open Chaser Cams</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo"><span>TREVOR</span><b>WX</b></div>
+    <p>Weather information is for awareness. Always follow official alerts from the National Weather Service and local emergency management.</p>
+    <span>© <span id="year"></span> TrevorWX</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

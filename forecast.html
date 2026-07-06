@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrevorWX | Forecast</title>
+  <link rel="stylesheet" href="forecast.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html"><span>TREVOR</span><b>WX</b></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="radar.html">Radar</a>
+      <a href="index.html#severe">Severe Weather</a>
+      <a class="active" href="forecast.html">Forecast</a>
+      <a href="live.html">Live Coverage</a>
+    </nav>
+    <a class="home-button" href="index.html">← Back to HQ</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow"><span class="status-dot"></span> TREVORWX LOCAL FORECAST</p>
+      <h1>Coon Rapids &<br><span>Twin Cities Forecast</span></h1>
+      <p>Latest weather updates, forecast videos, and a quick look at the week ahead.</p>
+      <div class="hero-buttons">
+        <a class="button primary" href="#" id="latestVideoButton">Watch Latest Forecast</a>
+        <a class="button secondary" href="radar.html">Open Live Radar</a>
+      </div>
+    </section>
+
+    <section class="latest-grid">
+      <div class="video-card">
+        <div class="video-placeholder">
+          <div class="play-icon">▶</div>
+          <strong id="videoTitle">Latest TrevorWX Forecast</strong>
+          <span id="videoText">Add your newest YouTube forecast link in forecast.js.</span>
+        </div>
+        <div class="video-footer">
+          <div>
+            <span class="panel-label">LATEST VIDEO</span>
+            <h2 id="latestTitle">Coon Rapids & Twin Cities Forecast</h2>
+          </div>
+          <a href="#" id="videoTextLink">Watch on YouTube ↗</a>
+        </div>
+      </div>
+
+      <aside class="update-card">
+        <span class="panel-label">NEXT UPDATE</span>
+        <h2 id="nextUpdate">Forecasts posted regularly</h2>
+        <p id="forecastHeadline">Check back for the latest TrevorWX forecast video and weather update.</p>
+        <div class="line"></div>
+        <small id="forecastUpdated">TrevorWX Weather Center</small>
+      </aside>
+    </section>
+
+    <section class="week-section">
+      <div class="section-heading">
+        <p class="eyebrow">WEEK AHEAD</p>
+        <h2>7-Day Forecast</h2>
+        <p>Update these cards whenever you record a new forecast. They are designed to match your TrevorWX 7-day board.</p>
+      </div>
+
+      <div class="forecast-grid" id="forecastGrid">
+        <article><span>MON</span><div class="weather-icon">☀</div><strong>Monday</strong><p>Update forecast</p><b>--°</b></article>
+        <article><span>TUE</span><div class="weather-icon">☀</div><strong>Tuesday</strong><p>Update forecast</p><b>--°</b></article>
+        <article><span>WED</span><div class="weather-icon">☁</div><strong>Wednesday</strong><p>Update forecast</p><b>--°</b></article>
+        <article><span>THU</span><div class="weather-icon">☁</div><strong>Thursday</strong><p>Update forecast</p><b>--°</b></article>
+        <article><span>FRI</span><div class="weather-icon">☀</div><strong>Friday</strong><p>Update forecast</p><b>--°</b></article>
+        <article><span>SAT</span><div class="weather-icon">☀</div><strong>Saturday</strong><p>Update forecast</p><b>--°</b></article>
+        <article><span>SUN</span><div class="weather-icon">☁</div><strong>Sunday</strong><p>Update forecast</p><b>--°</b></article>
+      </div>
+    </section>
+
+    <section class="forecast-tools">
+      <div>
+        <p class="eyebrow">FORECAST TOOLS</p>
+        <h2>Need the live picture?</h2>
+        <p>Use the TrevorWX radar workspace to check current radar, warnings, and developing weather before watching the next forecast update.</p>
+      </div>
+      <a class="button primary" href="radar.html">Open TrevorWX Radar</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo"><span>TREVOR</span><b>WX</b></div>
+    <p>Weather information is for awareness. Always follow official alerts from the National Weather Service and local emergency management.</p>
+    <span>© <span id="year"></span> TrevorWX</span>
+  </footer>
+
+  <script src="forecast.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrevorWX | Severe Weather Center</title>
+  <link rel="stylesheet" href="severe.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html"><span>TREVOR</span><b>WX</b></a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="radar.html">Radar</a>
+      <a class="active" href="severe.html">Severe Weather</a>
+      <a href="forecast.html">Forecast</a>
+      <a href="live.html">Live Coverage</a>
+    </nav>
+
+    <a class="home-button" href="index.html">← Back to HQ</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-sweep"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" id="heroDot"></span> TREVORWX SEVERE WEATHER CENTER</p>
+        <h1>Know the risk.<br><span>Stay ahead.</span></h1>
+        <p>Live alert monitoring, radar tools, official outlooks, and TrevorWX coverage updates for severe weather situations.</p>
+
+        <div class="hero-buttons">
+          <a class="button primary" href="radar.html">Open Live Radar</a>
+          <a class="button secondary" href="live.html">Watch Live Coverage</a>
+        </div>
+      </div>
+
+      <div class="alert-card">
+        <div class="alert-top">
+          <span>LIVE ALERT STATUS</span>
+          <strong id="alertStatus">LOADING</strong>
+        </div>
+
+        <h2 id="alertHeadline">Connecting to TrevorWX Alert Monitor...</h2>
+        <p id="alertLocation">Please wait</p>
+
+        <div class="alert-line"></div>
+
+        <div class="alert-meta">
+          <span id="alertUpdated">Checking for updates</span>
+          <span id="monitorStatus">MONITOR</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-section">
+      <div class="status-intro">
+        <p class="eyebrow">CURRENT COVERAGE STATUS</p>
+        <h2 id="coverageTitle">Monitoring Nationwide</h2>
+        <p id="coverageText">TrevorWX is monitoring current conditions. Major weather updates will appear here when active weather develops.</p>
+      </div>
+
+      <div class="count-grid">
+        <article>
+          <span class="count-label">TORNADO WARNINGS</span>
+          <strong id="tornadoCount">0</strong>
+        </article>
+        <article>
+          <span class="count-label">SEVERE WARNINGS</span>
+          <strong id="severeCount">0</strong>
+        </article>
+        <article>
+          <span class="count-label">FLASH FLOOD</span>
+          <strong id="floodCount">0</strong>
+        </article>
+        <article>
+          <span class="count-label">WEATHER WATCHES</span>
+          <strong id="watchCount">0</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="tools-section">
+      <div class="section-heading">
+        <p class="eyebrow">SEVERE WEATHER TOOLS</p>
+        <h2>Track the setup.</h2>
+        <p>Use these official and trusted weather tools alongside TrevorWX coverage.</p>
+      </div>
+
+      <div class="tool-grid">
+        <a class="tool-card featured" href="https://app.weatherfront.com/" target="_blank" rel="noopener">
+          <span class="tool-icon">◉</span>
+          <h3>WeatherFront Radar</h3>
+          <p>Interactive radar, warnings, reports, and weather analysis tools.</p>
+          <b>Open Radar ↗</b>
+        </a>
+
+        <a class="tool-card" href="https://www.weather.gov/" target="_blank" rel="noopener">
+          <span class="tool-icon">⚠</span>
+          <h3>NWS Alerts</h3>
+          <p>Official watches, warnings, forecasts, and emergency information.</p>
+          <b>Open NWS ↗</b>
+        </a>
+
+        <a class="tool-card" href="https://www.spc.noaa.gov/" target="_blank" rel="noopener">
+          <span class="tool-icon">▲</span>
+          <h3>SPC Outlooks</h3>
+          <p>Severe weather outlooks, mesoscale discussions, and storm reports.</p>
+          <b>Open SPC ↗</b>
+        </a>
+
+        <a class="tool-card" href="https://www.weather.gov/mpx/" target="_blank" rel="noopener">
+          <span class="tool-icon">☁</span>
+          <h3>Twin Cities NWS</h3>
+          <p>Local forecasts, radar, warnings, and weather updates for the area.</p>
+          <b>Open Local NWS ↗</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="watching-section">
+      <div class="watching-copy">
+        <p class="eyebrow">TREVORWX UPDATE</p>
+        <h2 id="watchingTitle">What We’re Watching</h2>
+        <p id="watchingText">No major severe-weather setup is being highlighted right now. Check back for updates when conditions change.</p>
+        <small id="watchingUpdated">TrevorWX Weather Center</small>
+      </div>
+
+      <div class="safety-card">
+        <span class="safety-icon">!</span>
+        <div>
+          <h3>Use official warnings first.</h3>
+          <p>TrevorWX is for weather awareness and coverage. During dangerous weather, follow National Weather Service warnings and local emergency management instructions immediately.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo"><span>TREVOR</span><b>WX</b></div>
+    <p>Weather information is for awareness. Always follow official alerts from the National Weather Service and local emergency management.</p>
+    <span>© <span id="year"></span> TrevorWX</span>
+  </footer>
+
+  <script src="severe.js"></script>
+</body>
+</html>
